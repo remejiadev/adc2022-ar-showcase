@@ -11,9 +11,7 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List(ShowCase.allCases, id: \.id) { showCase in
-                NavigationLink {
-                    ARCar()
-                } label: {
+                NavigationLink(destination: showCase.destination) {
                     Text(showCase.rawValue)
                 }
             }
