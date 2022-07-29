@@ -34,7 +34,7 @@ struct ARSphereView: UIViewControllerRepresentable {
 
 
 class ARViewController: UIViewController {
-    let videoName = "cave_video"
+    let videoName = "london_video"
     let videoType = "mp4"
     let spaceName = "SphereSpace.usdz"
 
