@@ -12,7 +12,38 @@ struct ARCar: View {
     @State var currentCarAction: CarAction = .idle
     
     var body: some View {
-            arView.edgesIgnoringSafeArea(.all)
+        arView.edgesIgnoringSafeArea(.all)
+        controls.padding()
+    }
+    
+    var controls: some View {
+        VStack {
+            Spacer()
+            Button {
+                currentCarAction = .forward
+            } label: {
+                Image(systemName: "arrow.up")
+            }
+            HStack {
+                Spacer()
+                Button {
+                    currentCarAction = .left
+                } label: {
+                    Image(systemName: "arrow.left")
+                }
+                Button {
+                    currentCarAction = .right
+                } label: {
+                    Image(systemName: "arrow.right")
+                }
+                Spacer()
+            }
+            Button {
+                currentCarAction = .backward
+            } label: {
+                Image(systemName: "arrow.down")
+            }
+        }
     }
     
     private var arView: some View {
