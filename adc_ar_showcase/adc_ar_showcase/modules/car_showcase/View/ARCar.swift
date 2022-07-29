@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ARCar: View {
     
+    @State var currentCarAction: CarAction = .idle
+    
     var body: some View {
             arView.edgesIgnoringSafeArea(.all)
     }
