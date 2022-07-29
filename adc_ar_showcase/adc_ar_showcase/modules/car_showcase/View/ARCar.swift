@@ -16,7 +16,7 @@ struct ARCar: View {
     }
     
     private var arView: some View {
-        ARCarView()
+        ARCarView(selectedCarAction: $currentCarAction ,car: try? Car.loadApplaudoCar())
     }
 }
 
