@@ -34,6 +34,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C028A28028943B21006E40AB /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28128943B26006E40AB /* car_showcase */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		C028A28128943B26006E40AB /* car_showcase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = car_showcase;
+			sourceTree = "<group>";
+		};
 		C0AB3C5928943616000E01F3 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +68,7 @@
 		C0AB3C6428943616000E01F3 /* adc_ar_showcase */ = {
 			isa = PBXGroup;
 			children = (
+				C028A28028943B21006E40AB /* modules */,
 				C0AB3C6528943616000E01F3 /* AppDelegate.swift */,
 				C0AB3C6728943616000E01F3 /* ContentView.swift */,
 				C0AB3C6928943617000E01F3 /* Experience.rcproject */,
