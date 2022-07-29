@@ -9,7 +9,16 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(ShowCase.allCases, id: \.id) { showCase in
+                NavigationLink {
+                    ARCar()
+                } label: {
+                    Text(showCase.rawValue)
+                }
+            }
+            .navigationTitle("ADC")
+        }
     }
 }
 
