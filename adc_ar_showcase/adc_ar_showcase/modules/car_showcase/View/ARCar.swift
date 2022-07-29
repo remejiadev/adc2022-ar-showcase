@@ -12,8 +12,10 @@ struct ARCar: View {
     @State var currentCarAction: CarAction = .idle
     
     var body: some View {
-        arView.edgesIgnoringSafeArea(.all)
-        controls.padding()
+        ZStack {
+            arView.edgesIgnoringSafeArea(.all)
+            controls.padding()
+        }
     }
     
     var controls: some View {
