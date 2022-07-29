@@ -10,6 +10,7 @@ import SwiftUI
 struct ARCar: View {
     
     @State var currentCarAction: CarAction = .idle
+    @State var hasFinishedAction: Bool = true
     
     var body: some View {
         ZStack {
@@ -22,34 +23,65 @@ struct ARCar: View {
         VStack {
             Spacer()
             Button {
-                currentCarAction = .forward
+                if hasFinishedAction {
+                    hasFinishedAction = false
+                    currentCarAction = .forward
+                }
             } label: {
                 Image(systemName: "arrow.up")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .tint(.red)
             }
+            .padding()
+            
             HStack {
                 Spacer()
                 Button {
-                    currentCarAction = .left
+                    if hasFinishedAction {
+                        hasFinishedAction = false
+                        currentCarAction = .left
+                    }
                 } label: {
                     Image(systemName: "arrow.left")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .tint(.red)
                 }
+                .padding()
+                .padding(.horizontal, 50)
                 Button {
-                    currentCarAction = .right
+                    if hasFinishedAction {
+                        hasFinishedAction = false
+                        currentCarAction = .right
+                    }
                 } label: {
                     Image(systemName: "arrow.right")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .tint(.red)
                 }
+                .padding()
+                .padding(.horizontal, 50)
                 Spacer()
             }
             Button {
-                currentCarAction = .backward
+                if hasFinishedAction {
+                    hasFinishedAction = false
+                    currentCarAction = .backward
+                }
             } label: {
                 Image(systemName: "arrow.down")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .tint(.red)
             }
+            .padding()
         }
     }
     
     private var arView: some View {
-        ARCarView(selectedCarAction: $currentCarAction ,car: try? Car.loadApplaudoCar())
+        ARCarView(selectedCarAction: $currentCarAction, hasFinishedMoving: $hasFinishedAction ,car: try? Car.loadApplaudoCar())
     }
 }
 
