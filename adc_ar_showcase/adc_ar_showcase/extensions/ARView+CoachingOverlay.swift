@@ -20,4 +20,8 @@ extension ARView: ARCoachingOverlayViewDelegate {
         coachingOverlay.goal = .horizontalPlane
         self.addSubview(coachingOverlay)
     }
+    
+    public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
+        
+    }
 }
