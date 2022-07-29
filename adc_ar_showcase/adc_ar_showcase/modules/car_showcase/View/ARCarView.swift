@@ -19,6 +19,10 @@ struct ARCarView: UIViewRepresentable {
         let arView = ARView(frame: .zero)
         
         if let car = car {
+            car.actions.movedForward.onAction = self.setToIdle(entity:)
+            car.actions.movedBackward.onAction = self.setToIdle(entity:)
+            car.actions.movedLeft.onAction = self.setToIdle(entity:)
+            car.actions.movedRight.onAction = self.setToIdle(entity:)
             arView.scene.anchors.append(car)
         }
         
@@ -26,6 +30,7 @@ struct ARCarView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
+        print(selectedCarAction)
         if selectedCarAction != .idle {
             executeCarAction(selectedAction: selectedCarAction)
         }
@@ -44,7 +49,9 @@ struct ARCarView: UIViewRepresentable {
         case .idle:
             break
         }
-        
+    }
+    
+    func setToIdle(entity: Entity?) {
         selectedCarAction = .idle
     }
 }
