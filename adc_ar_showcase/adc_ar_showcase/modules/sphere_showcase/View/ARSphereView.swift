@@ -34,7 +34,7 @@ struct ARSphereView: UIViewControllerRepresentable {
 
 
 class ARViewController: UIViewController {
-    let videoName = "tower_bridge"
+    let videoName = "london_video"
     let videoType = "mp4"
     let spaceName = "SphereSpace.usdz"
 
@@ -44,8 +44,10 @@ class ARViewController: UIViewController {
         let arView = ARView(frame: .zero)
         view = arView
 
-        let anchorEntity = AnchorEntity()
-        arView.scene.addAnchor(anchorEntity)
+        
+        let anchor = AnchorEntity() // Anchor (anchor that fixes the AR model)
+        anchor.position = simd_make_float3(0, 0, -3) // The position of the anchor is 3m away the initial position of the device.
+        arView.scene.addAnchor(anchor)
 
         if let url = Bundle.main.url(forResource: videoName, withExtension: videoType) {
             let playerItem = AVPlayerItem(url: url)
@@ -56,7 +58,7 @@ class ARViewController: UIViewController {
             do {
                 let spaceModelEntity = try Entity.loadModel(named: spaceName)
                 spaceModelEntity.model?.materials = [material]
-                anchorEntity.addChild(spaceModelEntity)
+                anchor.addChild(spaceModelEntity)
             } catch {
                 assertionFailure("Could not load the USDZ asset.")
             }
