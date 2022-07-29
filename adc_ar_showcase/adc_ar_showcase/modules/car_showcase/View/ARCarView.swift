@@ -28,7 +28,6 @@ struct ARCarView: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {
         if selectedCarAction != .idle {
             executeCarAction(selectedAction: selectedCarAction)
-            selectedCarAction = .idle
         }
     }
     
@@ -45,5 +44,7 @@ struct ARCarView: UIViewRepresentable {
         case .idle:
             break
         }
+        
+        selectedCarAction = .idle
     }
 }
