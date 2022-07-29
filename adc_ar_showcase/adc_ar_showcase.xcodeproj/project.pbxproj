@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C028A28728943D0A006E40AB /* car.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C028A28628943D0A006E40AB /* car.rcproject */; };
+		C028A28928943DC0006E40AB /* ARCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28828943DC0006E40AB /* ARCar.swift */; };
+		C028A28B28943E71006E40AB /* ARCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28A28943E71006E40AB /* ARCarView.swift */; };
+		C028A28D289441B8006E40AB /* CarAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28C289441B8006E40AB /* CarAction.swift */; };
+		C028A29028945631006E40AB /* ARView+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */; };
 		C0AB3C6628943616000E01F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6528943616000E01F3 /* AppDelegate.swift */; };
 		C0AB3C6828943616000E01F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6728943616000E01F3 /* ContentView.swift */; };
-		C0AB3C6A28943617000E01F3 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6928943617000E01F3 /* Experience.rcproject */; };
 		C0AB3C6C28943619000E01F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AB3C6B28943619000E01F3 /* Assets.xcassets */; };
 		C0AB3C6F28943619000E01F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AB3C6E28943619000E01F3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C028A28628943D0A006E40AB /* car.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = car.rcproject; sourceTree = "<group>"; };
+		C028A28828943DC0006E40AB /* ARCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCar.swift; sourceTree = "<group>"; };
+		C028A28A28943E71006E40AB /* ARCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCarView.swift; sourceTree = "<group>"; };
+		C028A28C289441B8006E40AB /* CarAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAction.swift; sourceTree = "<group>"; };
+		C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+CoachingOverlay.swift"; sourceTree = "<group>"; };
 		C0AB3C6228943616000E01F3 /* adc_ar_showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adc_ar_showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AB3C6528943616000E01F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0AB3C6728943616000E01F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C0AB3C6928943617000E01F3 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		C0AB3C6B28943619000E01F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0AB3C6E28943619000E01F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,6 +42,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C028A28028943B21006E40AB /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28128943B26006E40AB /* car_showcase */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		C028A28128943B26006E40AB /* car_showcase */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28528943D00006E40AB /* Assets */,
+				C028A28428943CFA006E40AB /* ViewModel */,
+				C028A28328943CEA006E40AB /* View */,
+				C028A28228943CE5006E40AB /* Model */,
+			);
+			path = car_showcase;
+			sourceTree = "<group>";
+		};
+		C028A28228943CE5006E40AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28C289441B8006E40AB /* CarAction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C028A28328943CEA006E40AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28828943DC0006E40AB /* ARCar.swift */,
+				C028A28A28943E71006E40AB /* ARCarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C028A28428943CFA006E40AB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C028A28528943D00006E40AB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28628943D0A006E40AB /* car.rcproject */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C028A28E2894560E006E40AB /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		C0AB3C5928943616000E01F3 = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +120,10 @@
 		C0AB3C6428943616000E01F3 /* adc_ar_showcase */ = {
 			isa = PBXGroup;
 			children = (
+				C028A28E2894560E006E40AB /* extensions */,
+				C028A28028943B21006E40AB /* modules */,
 				C0AB3C6528943616000E01F3 /* AppDelegate.swift */,
 				C0AB3C6728943616000E01F3 /* ContentView.swift */,
-				C0AB3C6928943617000E01F3 /* Experience.rcproject */,
 				C0AB3C6B28943619000E01F3 /* Assets.xcassets */,
 				C0AB3C6D28943619000E01F3 /* Preview Content */,
 			);
@@ -140,9 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C028A28B28943E71006E40AB /* ARCarView.swift in Sources */,
+				C028A28728943D0A006E40AB /* car.rcproject in Sources */,
+				C028A29028945631006E40AB /* ARView+CoachingOverlay.swift in Sources */,
 				C0AB3C6828943616000E01F3 /* ContentView.swift in Sources */,
 				C0AB3C6628943616000E01F3 /* AppDelegate.swift in Sources */,
-				C0AB3C6A28943617000E01F3 /* Experience.rcproject in Sources */,
+				C028A28D289441B8006E40AB /* CarAction.swift in Sources */,
+				C028A28928943DC0006E40AB /* ARCar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
