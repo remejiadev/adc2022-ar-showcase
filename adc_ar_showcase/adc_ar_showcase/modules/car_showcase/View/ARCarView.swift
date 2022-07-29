@@ -27,7 +27,23 @@ struct ARCarView: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {
         if selectedCarAction != .idle {
-            
+            executeCarAction(selectedAction: selectedCarAction)
+            selectedCarAction = .idle
+        }
+    }
+    
+    func executeCarAction(selectedAction: CarAction) {
+        switch selectedAction {
+        case .forward:
+            car?.notifications.carForward.post()
+        case .right:
+            car?.notifications.carRIght.post()
+        case .left:
+            car?.notifications.carLeft.post()
+        case .backward:
+            car?.notifications.carBackward.post()
+        case .idle:
+            break
         }
     }
 }
