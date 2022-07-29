@@ -11,6 +11,7 @@
 		C028A28928943DC0006E40AB /* ARCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28828943DC0006E40AB /* ARCar.swift */; };
 		C028A28B28943E71006E40AB /* ARCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28A28943E71006E40AB /* ARCarView.swift */; };
 		C028A28D289441B8006E40AB /* CarAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28C289441B8006E40AB /* CarAction.swift */; };
+		C028A29028945631006E40AB /* ARView+CoachingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */; };
 		C0AB3C6628943616000E01F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6528943616000E01F3 /* AppDelegate.swift */; };
 		C0AB3C6828943616000E01F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6728943616000E01F3 /* ContentView.swift */; };
 		C0AB3C6C28943619000E01F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AB3C6B28943619000E01F3 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		C028A28828943DC0006E40AB /* ARCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCar.swift; sourceTree = "<group>"; };
 		C028A28A28943E71006E40AB /* ARCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCarView.swift; sourceTree = "<group>"; };
 		C028A28C289441B8006E40AB /* CarAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAction.swift; sourceTree = "<group>"; };
+		C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARView+CoachingOverlay.swift"; sourceTree = "<group>"; };
 		C0AB3C6228943616000E01F3 /* adc_ar_showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adc_ar_showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AB3C6528943616000E01F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0AB3C6728943616000E01F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		C028A28E2894560E006E40AB /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C028A28F28945631006E40AB /* ARView+CoachingOverlay.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		C0AB3C5928943616000E01F3 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		C0AB3C6428943616000E01F3 /* adc_ar_showcase */ = {
 			isa = PBXGroup;
 			children = (
+				C028A28E2894560E006E40AB /* extensions */,
 				C028A28028943B21006E40AB /* modules */,
 				C0AB3C6528943616000E01F3 /* AppDelegate.swift */,
 				C0AB3C6728943616000E01F3 /* ContentView.swift */,
@@ -199,6 +210,7 @@
 			files = (
 				C028A28B28943E71006E40AB /* ARCarView.swift in Sources */,
 				C028A28728943D0A006E40AB /* car.rcproject in Sources */,
+				C028A29028945631006E40AB /* ARView+CoachingOverlay.swift in Sources */,
 				C0AB3C6828943616000E01F3 /* ContentView.swift in Sources */,
 				C0AB3C6628943616000E01F3 /* AppDelegate.swift in Sources */,
 				C028A28D289441B8006E40AB /* CarAction.swift in Sources */,

@@ -12,11 +12,14 @@ import RealityKit
 struct ARCarView: UIViewRepresentable {
     
     @Binding var selectedCarAction: CarAction
+    @Binding var hasFinishedMoving: Bool
     let car: Car.ApplaudoCar?
     
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
+        
+        arView.addCoaching()
         
         if let car = car {
             car.actions.movedForward.onAction = self.setToIdle(entity:)
@@ -30,7 +33,6 @@ struct ARCarView: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        print(selectedCarAction)
         if selectedCarAction != .idle {
             executeCarAction(selectedAction: selectedCarAction)
         }
@@ -53,5 +55,6 @@ struct ARCarView: UIViewRepresentable {
     
     func setToIdle(entity: Entity?) {
         selectedCarAction = .idle
+        hasFinishedMoving = true
     }
 }
