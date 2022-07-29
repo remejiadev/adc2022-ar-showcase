@@ -12,8 +12,13 @@ import RealityKit
 struct ARCarView: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-        let car = try! Car.loadApplaudoCar()
-        arView.scene.anchors.append(car)
+        
+        do {
+            let car = try Car.loadApplaudoCar()
+            arView.scene.anchors.append(car)
+        } catch {
+            print(error)
+        }
         
         return arView
     }
