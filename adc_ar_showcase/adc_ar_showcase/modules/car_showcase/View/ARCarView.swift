@@ -10,19 +10,21 @@ import SwiftUI
 import RealityKit
 
 struct ARCarView: UIViewRepresentable {
+    
+    @Binding var selectedCarAction: CarAction
+    let car: Car.ApplaudoCar
+    
+    
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-        
-        do {
-            let car = try Car.loadApplaudoCar()
-            arView.scene.anchors.append(car)
-        } catch {
-            print(error)
-        }
+        arView.scene.anchors.append(car)
         
         return arView
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
+        if selectedCarAction != .idle {
+            
+        }
     }
 }
