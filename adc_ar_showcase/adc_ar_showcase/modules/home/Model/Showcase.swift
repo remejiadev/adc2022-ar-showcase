@@ -27,4 +27,13 @@ extension ShowCase {
             return AnyView(ARSphere())
         }
     }
+    
+    var icon: String {
+        switch self {
+        case .applaudoCar:
+            return "car"
+        case .arSphere:
+            return "sleep"
+        }
+    }
 }
