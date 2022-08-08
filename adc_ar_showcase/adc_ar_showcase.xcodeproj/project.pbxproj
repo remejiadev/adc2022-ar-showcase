@@ -20,6 +20,7 @@
 		C028A2AD28947E5F006E40AB /* london_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C028A2AA28947A78006E40AB /* london_video.mp4 */; };
 		C028A2B0289482C5006E40AB /* cave_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C028A2AF289482C5006E40AB /* cave_video.mp4 */; };
 		C028A2B228948650006E40AB /* doi_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C028A2B128948650006E40AB /* doi_video.mp4 */; };
+		C028A2B428A1A7B6006E40AB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C028A2B328A1A7B6006E40AB /* CardView.swift */; };
 		C0AB3C6628943616000E01F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6528943616000E01F3 /* AppDelegate.swift */; };
 		C0AB3C6828943616000E01F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB3C6728943616000E01F3 /* ContentView.swift */; };
 		C0AB3C6C28943619000E01F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0AB3C6B28943619000E01F3 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		C028A2AB28947B5E006E40AB /* ARSphereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSphereView.swift; sourceTree = "<group>"; };
 		C028A2AF289482C5006E40AB /* cave_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = cave_video.mp4; path = ../../../../../../../../../Downloads/cave_video.mp4; sourceTree = "<group>"; };
 		C028A2B128948650006E40AB /* doi_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = doi_video.mp4; sourceTree = "<group>"; };
+		C028A2B328A1A7B6006E40AB /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C0AB3C6228943616000E01F3 /* adc_ar_showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = adc_ar_showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0AB3C6528943616000E01F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0AB3C6728943616000E01F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				C028A28528943D00006E40AB /* Assets */,
-				C028A28428943CFA006E40AB /* ViewModel */,
 				C028A28328943CEA006E40AB /* View */,
 				C028A28228943CE5006E40AB /* Model */,
 			);
@@ -96,13 +97,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C028A28428943CFA006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		C028A28528943D00006E40AB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +116,6 @@
 		C028A29928945E8C006E40AB /* home */ = {
 			isa = PBXGroup;
 			children = (
-				C028A29C28945EAF006E40AB /* ViewModel */,
 				C028A29B28945EAB006E40AB /* View */,
 				C028A29A28945EA7006E40AB /* Model */,
 			);
@@ -140,23 +133,15 @@
 		C028A29B28945EAB006E40AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C028A2B328A1A7B6006E40AB /* CardView.swift */,
 				C028A29D28945EBE006E40AB /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		C028A29C28945EAF006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		C028A2A128947500006E40AB /* sphere_showcase */ = {
 			isa = PBXGroup;
 			children = (
-				C028A2A72894797A006E40AB /* Assets */,
-				C028A2A42894751F006E40AB /* ViewModel */,
 				C028A2A32894751C006E40AB /* View */,
 				C028A2A228947513006E40AB /* Model */,
 			);
@@ -166,6 +151,7 @@
 		C028A2A228947513006E40AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C028A2A72894797A006E40AB /* Assets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,13 +163,6 @@
 				C028A2AB28947B5E006E40AB /* ARSphereView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C028A2A42894751F006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C028A2A72894797A006E40AB /* Assets */ = {
@@ -318,6 +297,7 @@
 				C028A28D289441B8006E40AB /* CarAction.swift in Sources */,
 				C028A29E28945EBE006E40AB /* Home.swift in Sources */,
 				C028A28928943DC0006E40AB /* ARCar.swift in Sources */,
+				C028A2B428A1A7B6006E40AB /* CardView.swift in Sources */,
 				C028A2A628947672006E40AB /* ARSphere.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

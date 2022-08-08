@@ -13,8 +13,8 @@ struct ARCarView: UIViewRepresentable {
     
     @Binding var selectedCarAction: CarAction
     @Binding var hasFinishedMoving: Bool
-    let car: Car.ApplaudoCar?
     
+    let car: Car.ApplaudoCar?
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)

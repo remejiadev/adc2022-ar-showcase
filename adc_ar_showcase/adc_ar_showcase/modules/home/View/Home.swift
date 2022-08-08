@@ -8,14 +8,40 @@
 import SwiftUI
 
 struct Home: View {
+    
+    let height: CGFloat = 250
+    
+    var columns: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
     var body: some View {
         NavigationView {
-            List(ShowCase.allCases, id: \.id) { showCase in
-                NavigationLink(destination: showCase.destination) {
-                    Text(showCase.rawValue)
+            VStack {
+                HStack {
+                    Label("ADC - ARKit", systemImage: "")
+                        .labelStyle(TitleOnlyLabelStyle())
+                        .font(.system(size: 25, weight: .medium))
+                        .foregroundColor(Color("GenericColor"))
+                    
+                    Spacer()
+                }
+                .padding([.top, .leading], 30.0)
+                
+                ScrollView {
+                    LazyVGrid(columns: columns, spacing: 16) {
+                        ForEach(ShowCase.allCases, id: \.self, content: { item in
+                            NavigationLink(destination: item.destination) {
+                                CardView(title: item.rawValue, icon: item.icon)
+                                    .frame(height: height)
+                            }
+                        })
+                    }
+                    .padding()
                 }
             }
-            .navigationTitle("ADC")
+            .navigationBarHidden(true)
         }
     }
 }
@@ -23,5 +49,6 @@ struct Home: View {
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
         Home()
+            .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }
