@@ -158,7 +158,6 @@
 		C028A2A128947500006E40AB /* sphere_showcase */ = {
 			isa = PBXGroup;
 			children = (
-				C028A2A72894797A006E40AB /* Assets */,
 				C028A2A42894751F006E40AB /* ViewModel */,
 				C028A2A32894751C006E40AB /* View */,
 				C028A2A228947513006E40AB /* Model */,
@@ -169,6 +168,7 @@
 		C028A2A228947513006E40AB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C028A2A72894797A006E40AB /* Assets */,
 			);
 			path = Model;
 			sourceTree = "<group>";
