@@ -9,12 +9,12 @@ import SwiftUI
 
 struct Home: View {
     
+    let height: CGFloat = 250
+    
     var columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible()),
     ]
-    
-    let height: CGFloat = 250
     
     var body: some View {
         NavigationView {
