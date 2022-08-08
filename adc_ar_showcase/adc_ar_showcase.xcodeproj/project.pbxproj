@@ -74,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				C028A28528943D00006E40AB /* Assets */,
-				C028A28428943CFA006E40AB /* ViewModel */,
 				C028A28328943CEA006E40AB /* View */,
 				C028A28228943CE5006E40AB /* Model */,
 			);
@@ -98,13 +97,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C028A28428943CFA006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		C028A28528943D00006E40AB /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +116,6 @@
 		C028A29928945E8C006E40AB /* home */ = {
 			isa = PBXGroup;
 			children = (
-				C028A29C28945EAF006E40AB /* ViewModel */,
 				C028A29B28945EAB006E40AB /* View */,
 				C028A29A28945EA7006E40AB /* Model */,
 			);
@@ -148,17 +139,9 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		C028A29C28945EAF006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		C028A2A128947500006E40AB /* sphere_showcase */ = {
 			isa = PBXGroup;
 			children = (
-				C028A2A42894751F006E40AB /* ViewModel */,
 				C028A2A32894751C006E40AB /* View */,
 				C028A2A228947513006E40AB /* Model */,
 			);
@@ -180,13 +163,6 @@
 				C028A2AB28947B5E006E40AB /* ARSphereView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		C028A2A42894751F006E40AB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C028A2A72894797A006E40AB /* Assets */ = {
