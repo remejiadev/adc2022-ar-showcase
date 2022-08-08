@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CardView: View {
+    
     let title: String
     let icon: String
+    
     var body: some View {
         ZStack {
             HStack {
