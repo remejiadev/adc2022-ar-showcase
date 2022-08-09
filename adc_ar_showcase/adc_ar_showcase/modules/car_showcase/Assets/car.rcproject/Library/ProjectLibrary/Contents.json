@@ -8,5 +8,10 @@
     "libraryIdentifier" : "95f537f8ff5e9508cb86ed26ccb94ed0",
     "format" : "model",
     "displayName" : "TankCockpit.usdz"
+  },
+  {
+    "libraryIdentifier" : "5aeda8670b8c922450bcf4a49d869232",
+    "format" : "model",
+    "displayName" : "compact-car.usdz"
   }
 ]
